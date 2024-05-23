@@ -1,299 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Beauty Queen Salon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .grid-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        .grid-item img {
-            width: 100%;
-            height: auto;
-        }
-        form {
-            margin-top: 20px;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-        form input[type="text"],
-        form input[type="email"],
-        form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        form input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        form input[type="submit"]:hover {
-            background-color: #555;
-        }
-        #b{
-            width: 200px;
-        }
-        #whatsapp{
-            width: 40px;
-            border-radius: 5px;
-        }
-        p{
-            text-align: center;
-            color: grey;
-            align-items: center;
-        }
-        h4{
-            color: orange;
-            
-            align-items: center;
-            text-align: center;
-            font-size: 30px;
-		
-        }
-        #c{
-            width: 400px;
-            border-radius: 10px;
-        }
-        footer{
-            color: white;
-            background-color: black;
-            text-align: center;
-        }
-        #d{
-            width: 40px;
-            border-radius: 5px;
-            margin-left: 40px;
-        }
-        #d:hover{
-            opacity: 0.6;
-            transition: 0.19s;
-            cursor: pointer;
-        }
-        #safari:hover{
-            color: yellow;
-            background-color: red;
-            opacity: 0.6;
-            transition: 0.19s;
-            cursor: pointer;
-        }
-        #face{
-            width: 40px;
-            border-radius: 20px;
-        }
-        #map:hover{
-            cursor: pointer;
-            color: red;
-            transition: 0.7s;
-            opacity: 0.6;
-            
-        }
-        #map{
-            text-align: center;
-            font: bold;
-            margin-left: 100px;
-        }
-	    body{
-		    text-align: center;
-		    align-items: center;
-	    }
-	    #cont{
-		    margin-left: 40px;
-	    }
-	    
-	    
-		
-		
-		    
-	    
-        
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hair Salon</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .fade {
+    animation: fade 2s infinite;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Prime Queens Beauty Salon</h1><img id="b" src="images/ap.jpg">
-        <p>Your best hair stylist in town</p>
-    </header>
-    <div class="container">
-        <h2>Welcome to Prime Queens Beauty Salon</h2> <a href="https://api.whatsapp.com/send?phone=%2B27785412607&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whatsapp" src="images/whats.jpeg">Whatsapp<a/> <a href="https://web.facebook.com/"><img id="face" src="images/facebook.jpg"></a>  <a id="app" href="details.html">Our Hair Styles</a><br><br>
-            <br>
-        <div class="grid">
-            <div class="grid-item">
-               <img src="images/ad.jpg" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                 <img src="images/cc.jpg" alt="Image 2">
-            </div>
-            <div class="grid-item">
-               <img src="images/aab.jpg" alt="Image 3">
-            </div>
+  <h1>Welcome to Prime Queens Hair Salon
+  
+  </h1>
+  
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="aa.jpg" class="image" alt="Hairstyle 1">
+    </div>
+    <div class="mySlides fade">
+      <img src="cc.jpg" class="image" alt="Hairstyle 2">
+    </div>
+    <div class="mySlides fade">
+      <img src="dd.jpg" class="image" alt="Hairstyle 3">
+    </div>
+    <!-- Add more images as needed -->
+  </div>
 
-            <div class="grid-item">
-                 <img src="images/ae.jpg" alt="Image 1">
-            </div>
-            <div class="grid-item">
-                <img src="images/jj.jpg" alt="Image 2">
-            </div>
-            <div class="grid-item">
-                 <img src="images/nn.jpg" alt="Image 3">
-            </div>
-		
-            <!-- Add more images as needed -->
-        </div><br><br>
-		<hr>
-		<br>
-		<br>
-		 We are open for walk in customers and booking by appointment<br>
-		<br><br>
-        
-        <h3>BOOK ONLINE</h3>
-        <form action="https://formsubmit.co/bothwell.gurure@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="date_service" placeholder="Service requested" required>
-            <input type="text" name="Request_date" placeholder="Date of request" required>
-		
-		<input type="submit" value="Book Now">
-        </form>
-    </div><br>
-    <hr>
-    <br>
-    <h4>****About Us****</h4><br>
-    <br>
-   <p> 
+  <div class="container">
+    <div class="item">
+      <img src="kk.jpg" alt="Hairstyle 1" class="image">
+    </div>
+    <div class="item">
+      <img src="jj.jpg" alt="Hairstyle 2" class="image">
+    </div>
+    <div class="item">
+      <img src="ii.jpg" alt="Hairstyle 3" class="image">
+    </div>
+    <!-- Add more images as needed -->
+  </div>
 
-<div class="about-us">
-    <br>
-    <p>Welcome to Prime Queens Beauty Salon, your premier destination for top-notch hair styling and barber services in Kempton Park, Johannesburg. We pride<br>
-	ourselves on delivering exceptional haircare solutions tailored to your unique style and preferences.</p><br><br>
-   <h3>Women's Services</h3><br>
-	<br>
-	 <a href="images/aw.jpg"><img id="c" src="images/aw.jpg"><br><br>
-    <ul>
-         <li>Straight Up</li>
-        <li>Sweet & Sour</li>
-        <li>Free Hand</li>
-        <li>Bonding</li>
-        <li>Kiddies Free Hand</li>
-        <li>Razor Cut</li>
-        <li>Dreads</li>
-        <li>Wool Style</li>
-        <li>Braids Plaiting</li>
-        <li>Relaxer</li>
-        <li>Hair Treatment</li>
-        <li>Shampoo Wash</li>
-    </ul>
-    <h3>Men's Barber Services</h3><br>
-    <ul>
-        <li>Chiskop</li>
-        <li>Beard Trimming</li>
-        <li>Shaving</li>
-        <li>Taper</li>
-    </ul><br><br>
-    <p>At Prime Queens Beauty Salon, we blend creativity with precision to craft hairstyles that reflect your personality and enhance <br>
-	 your natural beauty. Our experienced team is dedicated to providing a welcoming atmosphere where you can relax and indulge in a pampering experience like no other.</p><br>
-	 <a href="images/aw.jpg"><img id="c" src="images/aw.jpg"><br><br>
-    <p>Experience the epitome of style and sophistication at Prime Queens Beauty Salon. Book your appointment today and discover the perfect <br>
-	 look for every occasion.</p><br>
-</div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
 
-
-
-	   <br><br>
-	<p> <a href="images/oo.jpg"><img id="c" src="images/oo.jpg"></a><br><br> When beauty meets excellency<br>
-	   <br></p>
-	   <hr><br>
-
-
-
-
-	<p>  <a href="images/pp.jpg"><img id="c" src="images/pp.jpg"></a><br><br></p>
-
-<p><br>
-	   <a href="images/qq.jpg"> <img id="c" src="images/qq.jpg"></a><br><br></p>
-
-<br>
-
-
-
-<br>
-<hr>
-<br>
-
-<br>
-            <br>
-            
-<br>
-<p>
-<body >
-	<h4>****Our Salon****</h4><br><br>
-	<img id="c" src="images/rr.jpg"><br><br>
-	<p>We have specailly trained personnel to deal with each client according to their desires.<br>
-	<br><br>
-	<img id="c" src="images/ay.jpg"><br><br></p>
-	
-	<br><br>
-	
-	 
-	<div class="about-us">
-    <h4>Prime Queens Beauty Salon</h4><br><br>
-    <p>Welcome to Prime Beauty Salon, where beauty meets excellence. Nestled in the heart of Kempton Park, our salon boasts years of dedicated service and a<br>
-	commitment to providing our clients with the ultimate beauty experience.</p><br><br>
-		<img id="c" src="images/az.jpg"><br><br>
-    <p>At Prime Beauty Salon, we take pride in our specially trained personnel, who are experts in hair treatments, hair styling, weaves, pedicure, and manicure services.<br>
-	    Whether you're looking for a refreshing new haircut, a glamorous weave, or a relaxing pedicure, our skilled team is here to exceed your expectations.</p><br>
-    <p>Indulge in our luxurious nail services, where we offer both acrylic and gel artificial nails. Let our talented nail technicians adorn your hands with intricate designs<br>
-	and vibrant colors, leaving you feeling confident and stylish.</p><br><br>
-		 <img id="c" src="images/ak.jpg"><br><br>
-    <p>Experience the Prime Beauty Salon difference, where each visit is an opportunity to enhance your natural beauty and elevate your sense of self. Our warm and <br>
-	welcoming atmosphere, coupled with our dedication to perfection, ensures that every client leaves feeling rejuvenated and pampered.</p><br><br>
-    <p>Discover the beauty of Prime Beauty Salon today. Schedule your appointment and embark on a journey to timeless elegance and unparalleled relaxation.</p><br><br>
-</div><br>
-
-	
-	
-             
-<hr><br>
-    <br>
-    <a id="map" href="https://maps.app.goo.gl/PqN4uVZzAJzriFVL9">Map</a><br><br>
-	<br>
-
-</body>
-    <br>
-<footer>
-    <br>
-    
-    &copy Prime Queens Beauty Salon  2024  Cell: 078 541 2607  Email: primequeens-beautysalon@gmail.com<br> 71 Commissioner Road, Kempton Park, Johannesburg<br>
- <br>
-    <br>
-</footer>
-</p>
-
-
-
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
 </body>
 </html>

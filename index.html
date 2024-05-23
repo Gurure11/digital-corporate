@@ -1,555 +1,291 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Prime Queens Beauty Salon</title>
-
+    <title>Prime Beauty Queen Salon</title>
     <style>
-
         body {
-
             font-family: Arial, sans-serif;
-
             margin: 0;
-
             padding: 0;
-
         }
-
         header {
-
             background-color: #333;
-
             color: #fff;
-
             padding: 10px;
-
             text-align: center;
-
         }
-
         .container {
-
             max-width: 800px;
-
             margin: 0 auto;
-
             padding: 20px;
-
         }
-
         .grid {
-
             display: grid;
-
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
             gap: 20px;
-
         }
-
         .grid-item {
-
             border: 1px solid #ddd;
-
             padding: 10px;
-
         }
-
         .grid-item img {
-
             width: 100%;
-
             height: auto;
-
         }
-
         form {
-
             margin-top: 20px;
-
             border: 1px solid #ccc;
-
             padding: 20px;
-
         }
-
         form input[type="text"],
-
         form input[type="email"],
-
         form input[type="submit"] {
-
             width: 100%;
-
             padding: 10px;
-
             margin-bottom: 10px;
-
         }
-
         form input[type="submit"] {
-
             background-color: #333;
-
             color: #fff;
-
             border: none;
-
             cursor: pointer;
-
         }
-
         form input[type="submit"]:hover {
-
             background-color: #555;
-
         }
-
         #b{
-
             width: 200px;
-
         }
-
         #whatsapp{
-
-            width: 30px;
-
+            width: 40px;
             border-radius: 5px;
-		
-
         }
-	    #whatsapp:hover{
-		    cursor: pointer;
-		    opacity: 0.6;
-		    transition: 0.19s;
-	    }
-
         P{
-
             text-align: center;
-
             color: grey;
-
             align-items: center;
-
         }
-
         h4{
-
             color: orange;
-
             
-
             align-items: center;
-
             text-align: center;
-
             font-size: 30px;
 		
-
         }
-
         #c{
-
             width: 300px;
-
             border-radius: 10px;
-
         }
-
         footer{
-
             color: white;
-
             background-color: black;
-
             text-align: center;
-
         }
-
         #d{
-
             width: 40px;
-
             border-radius: 5px;
-
             margin-left: 40px;
-
         }
-
         #d:hover{
-
             opacity: 0.6;
-
             transition: 0.19s;
-
             cursor: pointer;
-
         }
-
         #safari:hover{
-
             color: yellow;
-
             background-color: red;
-
             opacity: 0.6;
-
             transition: 0.19s;
-
             cursor: pointer;
-
         }
-
-        #facebook{
-
-            width: 30px;
-
+        #face{
+            width: 40px;
             border-radius: 20px;
-		margin-left: 50px;
-
         }
-	    #facebook:hover{
-		    cursor: pointer;
-		    opacity: 0.6;
-		    transition: 0.19s;
-		    
-	    }
-
         #map:hover{
-
             cursor: pointer;
-
             color: red;
-
             transition: 0.7s;
-
             opacity: 0.6;
-
             
-
         }
-
         #map{
-
             text-align: center;
-
             font: bold;
-
             margin-left: 100px;
-
         }
-p{
-	color: grey;
-	text-align: center
-}
-	    #back:hover{
+	    body{
+		    text-align: center;
+		    align-items: center;
+	    }
+	    #cont{
+		    margin-left: 40px;
+	    }
+	    #app:hover{
+		    color: grey;
+		    background-color: blue;
 		    cursor: pointer;
-		    color: blue;
 		    transition: 0.18s;
-		    opacity: 0.6;
+		    opacity: 0.7;
 		    
 	    }
-	    #back{
-		    margin-left: 50px;
-	    }
+	    
+		
+		
+		    
+	    
+        
     </style>
-	
-        <script>
-        function changeLanguage(lang) {
-            // Define language-specific content
-            var content = {
-                "en": {
-                    "greeting": "Hello!",
-                    "message": "Welcome to our website."
-                },
-                "fr": {
-                    "greeting": "Bonjour!",
-                    "message": "Bienvenue sur notre site web."
-                },
-                "es": {
-                    "greeting": "¡Hola!",
-                    "message": "Bienvenido a nuestro sitio web."
-                }
-                // Add more languages and content as needed
-            };
-
-            // Change content based on selected language
-            document.getElementById('greeting').innerText = content[lang]['greeting'];
-            document.getElementById('message').innerText = content[lang]['message'];
-        }
-    </script>
-
-
 </head>
-
 <body>
-
     <header>
-
-        <h1>Prime Queens Beauty Salon</h1><img id="b" src="images/aa.jpg">
-
-        <p>Your exprerienced beauty therapist</p>
-
+        <h1>Prime Queens Beauty Salon</h1><img id="b" src="images/dd.jpg">
+        <p>Your best hair stylist in town</p>
     </header>
-
     <div class="container">
-
-        <h2>Prime Queens Beauty Salon</h2> <a href="https://api.whatsapp.com/send?phone=%2B27785412607&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whatsapp" src="images/whats.jpeg">Contact Us<a/> <a href="https://web.facebook.com/"><img id="facebook" src="images/facebook.jpg"></a>  Cell: +27 78 541 2607 <br><br>
-
+        <h2>Welcome to Prime Queens Beauty Salon</h2> <a href="https://api.whatsapp.com/send?phone=%2B27785412607&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whatsapp" src="images/whats.jpeg">Whatsapp<a/> <a href="https://web.facebook.com/"><img id="face" src="images/facebook.jpg"></a>  <a id="app" href="details.html">Our Hair Styles</a><br><br>
             <br>
-		<br>
-		
-<h1 id="greeting">Hello!</h1>
-<p id="message">Welcome to our website.</p>
-
-<select onchange="changeLanguage(this.value)">
-    <option value="en">English</option>
-    <option value="fr">French</option>
-    <option value="es">Spanish</option>
-    <!-- Add more languages here -->
-</select><br><br>
-
         <div class="grid">
-
             <div class="grid-item">
-
-               <img src="images/aab.jpg" alt="Image 1">
-
+               <img src="images/aa.jpg" alt="Image 1">
             </div>
-
             <div class="grid-item">
-
                  <img src="images/cc.jpg" alt="Image 2">
-
+            </div>
+            <div class="grid-item">
+               <img src="images/aab.jpg" alt="Image 3">
             </div>
 
             <div class="grid-item">
-
-               <img src="images/ii.jpg" alt="Image 3">
-
+                 <img src="images/ll.jpg" alt="Image 1">
             </div>
-
-
-
             <div class="grid-item">
-
-                 <img src="images/nn.jpg" alt="Image 1">
-
+                <img src="images/jj.jpg" alt="Image 2">
             </div>
-
             <div class="grid-item">
-
-                <img src="images/oo.jpg" alt="Image 2">
-
+                 <img src="images/nn.jpg" alt="Image 3">
             </div>
-
-            <div class="grid-item">
-
-                 <img src="images/pp.jpg" alt="Image 3">
-
-            </div>
-		       
 		
-             <div class="grid-item">
-
-               <img src="images/ee.jpg" alt="Image 1">
-
-            </div>
-
-            <div class="grid-item">
-
-                 <img src="images/ll.jpg" alt="Image 2">
-
-            </div>
-
-            <div class="grid-item">
-
-               <img src="images/qq.jpg" alt="Image 3">
-
-            </div>
-
-
-
-            <div class="grid-item">
-
-                 <img src="images/uu.jpg" alt="Image 1">
-
-            </div>
-
-            <div class="grid-item">
-
-                <img src="images/rr.jpg" alt="Image 2">
-
-            </div>
-
-            <div class="grid-item">
-
-                 <img src="images/vv.jpg" alt="Image 3">
-
-            </div>
-
             <!-- Add more images as needed -->
-
-        
-<br>
+        </div><br><br>
+		<hr>
 		<br>
-        
-
-      
-   <br><br>
-
-    <hr>
-
-    <br>
-
-  
-
-    <br>
-
-   <p> 
-<h4>About Prime Queens Beauty Salon</h4><br><br>
-<p>
-
-
----
-
-Welcome to Prime Beauty Queens, your premier destination for exquisite hair and nail services in Kempton Park! With years of dedicated
-service in the industry, we have established ourselves as a beacon of excellence in hair treatment, styling, and nail care.<br><br>
-<a href="images/pp.jpg"><img id="c" src="images/pp.jpg"></a><br><br>
-At Prime Beauty Queens, we understand the importance of looking and feeling your best. That's why we offer a comprehensive range of services
-tailored to meet your unique beauty needs. Whether you're in search of a stunning hair makeover or a relaxing nail treatment, our team of skilled
-professionals is here to exceed your expectations.<br><br>
-	<a href="images/cc.jpg"><img id="c" src="images/cc.jpg"></a><br><br>
-
-Our expertise in hair care encompasses a diverse array of styles, including straight up, sweet sour, free hand, kiddies free hand, bonding,
-razor-cut dreads, wool styles, and two lines. Additionally, we specialize in gents' haircuts, offering precision cuts such as chiskp, brush cut,
-trim, and taper, among others. Whatever your preferred style, our talented stylists are committed to delivering results that leave you looking and <br><br>
-feeling fabulous.<br>
-<a href="images/abb.jpg"><img id="c" src="images/abb.jpg"></a><br><br>
-In addition to our styling services, we also offer a range of hair treatments, including hair dye, relaxer, and intensive treatments to keep your 
-locks healthy and vibrant. Plus, our braiding services are perfect for those looking to add flair and sophistication to their hair.<br><br>
-<a href="images/aoo.jpg"><img id="c" src="images/aoo.jpg"></a><br><br>
-At Prime Beauty Queens, client satisfaction is our top priority. We pride ourselves on providing a welcoming and inclusive environment where you can relax
-and indulge in a moment of self-care. Whether you're preparing for a special occasion or simply treating yourself to some well-deserved pampering, we're here to
-make your beauty dreams a reality.<br><br>
-	<a href="images/bb.jpg"><img id="c" src="images/bb.jpg"></a><br><br>
-
-Discover the Prime Beauty Queens experience today and let us help you unleash your inner beauty!
-
---- 
-
- </p>
-
-
-
-
-
-
-
-
-<br>
-
-<hr>
-
-<br>
-
-
-
-<br>
-
-            <br>
-
-            
-
-<br>
-
-<p>
-
-<a href="images/yy.jpg"><img id="c" src="images/yy.jpg"></a><br><br>
-	We welcome walk inns and booking via appointment.<br><br>
-
-<a href="images/zz.jpg"><img id="c" src="images/zz.jpg"></a><br><br>
-	We have specially trained and qualified hair technicians to make sure that you get the best treatment are comfortable.<br><br>
-
-<a href="images/ff.jpg"><img id="c" src="images/ff.jpg"></a><br><br>
-	
-	<h4>**Contact Us:**</h4><br><br>
-
-<p>Experience the difference with Prime Beauty Queens. Contact us today to discuss your import, export, or fuel supply needs, and discover how <br>
-we can help your business thrive.<br><br></p>
-		<ul>
-			<li>Straight Up</li>
-			<li>Sweet Sour</li>
-			<li>Free Hand</li>
-			<li>Kiddies Free Hand</li>
-			<li>Bonding</li>
-			<li>Rasor</li>
-			<li>Dreadz</li>
-			<li>Wool Style</li>
-			<li>Two lines</li>
-		</ul>
-	<br>
 		<br>
-
-
-Just to name a few and we also have gents hair cuts in-store.<br><br>
-		  <h3>Book For Hair Or Nail Do!</h3><br>
-
-        <form action="https://formsubmit.co/bothwell.gurure11@gmail.com" method="POST">
-
+		 We are open for walk in customers and booking by appointment<br>
+		<br><br>
+        
+        <h3>APPLY ONLINE</h3>
+        <form action="https://formsubmit.co/bothwell.gurure@gmail.com" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
-
             <input type="email" name="email" placeholder="Your Email" required>
-
-            <input type="text" name="date_service" placeholder="Date of Service" required>
-
+            <input type="text" name="date_service" placeholder="Service requested" required>
             <input type="text" name="Request_date" placeholder="Date of request" required>
-		<input type"text arear" name="message" placeholder="Message">
+		
+		<input type="submit" value="Apply now">
+        </form>
+    </div><br>
+    <hr>
+    <br>
+    <h4>****About Us****</h4><br>
+    <br>
+   <p> Certainly! Here's an "About Us" section for Prime Queens Beauty Salon, structured in HTML list form:
 
-            <input type="submit" value="Book Now">
+```html
+<div class="about-us">
+    <h2>About Prime Queens Beauty Salon</h2>
+    <p>Welcome to Prime Queens Beauty Salon, your premier destination for top-notch hair styling and barber services in Kempton Park, Johannesburg. We pride<br>
+	ourselves on delivering exceptional haircare solutions tailored to your unique style and preferences.</p><br><br>
+    <h3>Women's Services</h3>
+    <ul>
+        <li>Straight Up</li>
+        <li>Sweet & Sour</li>
+        <li>Free Hand</li>
+        <li>Bonding</li>
+        <li>Kiddies Free Hand</li>
+        <li>Razor Cut</li>
+        <li>Dreads</li>
+        <li>Wool Style</li>
+        <li>Braids Plaiting</li>
+        <li>Relaxer</li>
+        <li>Hair Treatment</li>
+        <li>Shampoo Wash</li>
+    </ul>
+    <h3>Men's Barber Services</h3>
+    <ul>
+        <li>Chiskop</li>
+        <li>Beard Trimming</li>
+        <li>Shaving</li>
+        <li>Taper</li>
+    </ul>
+    <p>At Prime Queens Beauty Salon, we blend creativity with precision to craft hairstyles that reflect your personality and enhance your natural beauty. Our experienced team is dedicated to providing a welcoming atmosphere where you can relax and indulge in a pampering experience like no other.</p>
+    <p>Experience the epitome of style and sophistication at Prime Queens Beauty Salon. Book your appointment today and discover the perfect look for every occasion.</p>
+</div>
 
-        </form><br>
 
 
+	   <br><br>
+	<p> <a href="images/oo.jpg"><img id="c" src="images/oo.jpg"></a><br><br> Our Lovely Teachers changing our lives<br>
+	   <br></p>
+	   <hr><br>
+<p>We understand the importance of fostering a well-rounded individual, which is why we offer a wide range of sporting and extracurricular activities.<br>
+From athletics to arts and everything in between, there's something for everyone to explore and excel in.<br></p>
+
+<p>In addition to our academic and extracurricular offerings, More Blessing is proud to have produced quality students and graduates who have gone on to excel in<br>
+		their chosen fields. Our alumni network is a testament to the success of our educational philosophy and the dedication of our staff.<br>
+
+At More Blessing, we believe that education should be accessible to all. <br></p>
+<p>That's why we welcome students from all backgrounds and walks of life, ensuring that everyone has the opportunity to thrive in our supportive learning<br>
+environment.<br><br></p>
+	<p>  <a href="images/pp.jpg"><img id="c" src="images/pp.jpg"></a><br><br></p>
+
+<p><br>
+	   <a href="images/qq.jpg"> <img id="c" src="images/qq.jpg"></a><br><br></p>
+
+<br>
+
+
+
+<br>
+<hr>
+<br>
+
+<br>
+            <br>
+            
+<br>
+<p>
+<body >
+	<h4>****Our Salon****</h4><br><br>
+	<img id="c" src="images/rr.jpg"><br><br>
+	We have specailly trained personnel to deal with each client according to their desires.<br>
+	<br><br>
+	<img id="c" src="images/ay.jpg"><br><br>
+	
+	<br><br>
+	 <img id="c" src="images/ak.jpg"><br><br>
+	
+	
+             
 <hr><br>
-
     <br>
+    <a id="map" href="https://maps.app.goo.gl/PqN4uVZzAJzriFVL9">Map</a><br><br>
+	<br>
 
-  <p>  <a id="map" href="https://maps.app.goo.gl/QkqCG177wTcms21e8">Map</a>  <a id="back" href="https://b2bhint.com/en/company/za/benssa-trading--K2020886824#google_vignette">B2B Link</a><br>
-</p>
+</body>
     <br>
-
 <footer>
-
     <br>
-
     
-
-    &copy Prime Queens Beauty Salon 2024  Cell: 078 541 2607   Email: <br> Head Office -  71 Commissioner Street, Kempton Park, Johannesburg<br>
-
+    &copy Prime Queens Beauty Salon  2024  Cell: 078 541 2607  Email: primequeens-beautysalon@gmail.com<br> 71 Commissioner Road, Kempton Park, Johannesburg<br>
+ <br>
     <br>
-
-    <br>
-
 </footer>
-
 </p>
-
-
-
-
 
 
 
 </body>
-
-			 </html>
+</html>

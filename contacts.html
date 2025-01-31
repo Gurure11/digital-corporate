@@ -1,149 +1,167 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Prime Queens Beauty Parlor</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<style type="text/css">
-		body{
-			text-align: center;
-			align-items: center;
-			color: white;
-			background-image: url(images/we.jpg);
-			background-size: cover;
-			
-		}
-		#home{
-			
-			color: white;
-			margin-right: 12px;
-		}
-		#about{
-			
-			color: white;
-			margin-right: 10px;
-		}
-		#home:hover{
-			cursor: pointer;
-			background-color: white;
-			color: blue;
-			transition: 0.15s;
-			opacity: 0.6;
-
-		}
-		#about:hover{
-			cursor: pointer;
-			background-color: white;
-			color: blue;
-			transition: 0.15s;
-			opacity: 0.6;
-		}
-		#send{
-			color: white;
-			background-color: blue;
-			border-radius: 2px;
-			border: none;
-		
-		}
-		#send:hover{
-				cursor: pointer;
-				transition: 0.15s;
-				opacity: 0.6;
-				color: blue;
-				background-color: white;
-
-		}
-		#subscribe{
-			color: white;
-			border-radius: 2px;
-			border: none;
-			background-color: red;
-
-		}
-		#subscribe:hover{
-			color: red;
-			background-color: white;
-			opacity: 0.6;
-			transition: 0.15s;
-			cursor: pointer;
-		}
-		h2{
-			background-color: black;
-			color: white;
-			display: block;
-			font-size: 30px;
-		}
-		p{
-			font-weight: bold;
-		}
-		#face{
-			width: 20px;
-			border-radius: 7px;
-		}
-		#whats{
-			width: 20px;
-			border-radius: 5px;
-		}
-		#whats:hover{
-			cursor: pointer;
-			transition: 0.17s;
-			opacity: 0.7;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Queens Beauty Parlor</title>
+    <meta name="description" content="Prime Queens Beauty Parlor offers premium beauty services in Kempton Park. Book your appointment today for nails, makeup, and more!">
+    <meta name="keywords" content="beauty parlor, beauty salon, nails, makeup, Kempton Park, manicure, pedicure">
+    <meta name="author" content="Prime Queens Beauty Parlor">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Prime Queens Beauty Parlor">
+    <meta property="og:description" content="Prime Queens Beauty Parlor offers premium beauty services in Kempton Park. Book your appointment today for nails, makeup, and more!">
+    <meta property="og:image" content="https://www.primequeensbeauty.com/images/we.jpg">
+    <meta property="og:url" content="https://www.primequeensbeauty.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prime Queens Beauty Parlor">
+    <meta name="twitter:description" content="Prime Queens Beauty Parlor offers premium beauty services in Kempton Park. Book your appointment today for nails, makeup, and more!">
+    <meta name="twitter:image" content="https://www.primequeensbeauty.com/images/we.jpg">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background-image: url('images/we.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: white;
+            color: blue;
+        }
+        #home, #about {
+            display: inline-block;
+            margin: 10px;
+        }
+        #face, #whats {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
+            transition: opacity 0.3s;
+        }
+        #whats:hover, #face:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: white;
+            color: blue;
+        }
+        #subscribe {
+            background-color: red;
+        }
+        #subscribe:hover {
+            background-color: white;
+            color: red;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
-	<h2>Prime Queens Beauty</h2><br>
-	<br>
-	<br>
-		<a id="home" href="index.html">Home Page</a>
-		
-		<a id="about" href="details.html">About Us</a>
-	
-		<a href="https://web.facebook.com/"><img id="face" src="images/facebook.jpg"></a><br>
-	<br>
-	<hr>
-	<form action="https://formsubmit.co/bothwell.gurure11@gmail.com" method="POST">
-			<div>
-			
-			<label>Name</label>
-			<input type="text" name="firstName" placeholder="Enter first name"><br>
-			<br>
-			<label>Surname</label>
-			<input type="text" name="lastName" placeholder="Enter Surname"><br>
-			<br>
-			<label>Contact Number</label>
-			<input type="phone" placeholder="cell no."><br><br>
-			<label>Email</label>	
-			<input type="email" name="Email" placeholder="Email Adress"><br>
-				<br>
-				<br>
-				<button type="submit" id="subscribe">Subscribe</button> <input type="radio" name="radio">
-				<br>
-				
-				<br>
-				<br>
-			<hr>
-			<label>Message</label>
-			<textarea type="text area" name="Message"></textarea><br>
-			<br>
-			<button id="send" input="submit">Submit</button><br>
-			<br>
-		</div><br>
-		
-	</form>
-	<br>
-	<br><p>
-	Managing Director: 	 <br> 
-						+27 67 037 4348 <br> <a href="https://api.whatsapp.com/send?phone=%2B27670374348&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whats" src="images/whats.jpeg"></a><br>
-						23 Swart Street<br>
-						Kempton Park ,Johannesburg<br>
-	<br>
-	<br>
-	<a href="https://maps.app.goo.gl/nbBvNANTnjKtrCMV8" target="_bank">Map Click Me</a>
-	<br>
-	<br>
-	<footer>
-		&copy Prime Queens Beauty 2024
-	</footer>
+    <h2>Prime Queens Beauty</h2>
+    <div>
+        <a id="home" href="index.html">Home Page</a>
+        <a id="about" href="details.html">About Us</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/" target="_blank"><img id="face" src="images/facebook.jpg" alt="Facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B27670374348&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0" target="_blank"><img id="whats" src="images/whats.jpeg" alt="WhatsApp"></a>
+    </div>
+    <hr>
+    <form action="https://formsubmit.co/bothwell.gurure11@gmail.com" method="POST">
+        <label for="firstName">Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+        <label for="lastName">Surname</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter Surname" required>
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Cell no." required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <button type="submit" id="subscribe">Subscribe</button>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+        <button type="submit" id="send">Submit</button>
+    </form>
+    <p>
+        Managing Director: <br>
+        +27 67 037 4348 <br>
+        23 Swart Street, Kempton Park, Johannesburg <br>
+        <a href="https://maps.app.goo.gl/nbBvNANTnjKtrCMV8" target="_blank">View on Map</a>
+    </p>
+    <footer>
+        &copy; Prime Queens Beauty 2024
+    </footer>
 </body>
+</html>

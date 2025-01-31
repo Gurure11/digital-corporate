@@ -38,14 +38,44 @@
         nav a:hover {
             color: orange;
         }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
         .gallery img {
             width: 300px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
-            margin: 10px;
             transition: transform 0.3s ease-in-out;
         }
         .gallery img:hover {
             transform: scale(1.1);
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: orange;
+            color: white;
+            font-size: 18px;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
         }
         footer {
             color: white;
@@ -86,55 +116,132 @@
     <hr>
     
     <h4 id="prices">Our Prices</h4>
-    <p><strong>Hair Styles:</strong></p>
-    <ul>
-        <li>Straight up - R350</li>
-        <li>Sweet & Sour - R350</li>
-        <li>Free Hand - R150</li>
-        <li>Kiddies Free Hand - R120</li>
-        <li>Bonding - R250</li>
-        <li>Rasor Cut - R150</li>
-        <li>Dreadz - Price on Consultation</li>
-        <li>Wool Style - R150</li>
-        <li>Two Line - R80</li>
-    </ul>
-    
-    <p><strong>Hair Dye:</strong> R120</p>
-    
-    <p><strong>Pondo:</strong></p>
-    <ul>
-        <li>Own Pondo - R100</li>
-        <li>Our Pondo - R180</li>
-        <li>Twizzing - R20</li>
-    </ul>
-    
-    <p><strong>Relaxer:</strong></p>
-    <ul>
-        <li>Dark & Lovely - R150</li>
-        <li>Resore - R120</li>
-        <li>Precise - R120</li>
-        <li>Soft & Free - R120</li>
-        <li>Kiddies Relaxer - R100</li>
-    </ul>
-    
-    <p><strong>Braids:</strong></p>
-    <ul>
-        <li>Normal Braids Long - R400</li>
-        <li>Knotless Braids - R450</li>
-        <li>Extra Length Additional - R100</li>
-        <li>Bob Braids - R300</li>
-        <li>Straight Back - R300</li>
-    </ul>
-    
-    <p><strong>Barber Services:</strong></p>
-    <ul>
-        <li>Chiskop - R50</li>
-        <li>Any Cut - R60</li>
-        <li>Brush Cut - R50</li>
-        <li>Shaving - R40</li>
-        <li>Trim - R20</li>
-        <li>Tapper - R50</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Straight up</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Sweet & Sour</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Free Hand</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Kiddies Free Hand</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Bonding</td>
+                <td>R250</td>
+            </tr>
+            <tr>
+                <td>Rasor Cut</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Dreadz</td>
+                <td>Price on Consultation</td>
+            </tr>
+            <tr>
+                <td>Wool Style</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Two Line</td>
+                <td>R80</td>
+            </tr>
+            <tr>
+                <td>Hair Dye</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Own Pondo</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Our Pondo</td>
+                <td>R180</td>
+            </tr>
+            <tr>
+                <td>Twizzing</td>
+                <td>R20</td>
+            </tr>
+            <tr>
+                <td>Dark & Lovely Relaxer</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Resore Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Precise Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Soft & Free Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Kiddies Relaxer</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Normal Braids Long</td>
+                <td>R400</td>
+            </tr>
+            <tr>
+                <td>Knotless Braids</td>
+                <td>R450</td>
+            </tr>
+            <tr>
+                <td>Extra Length Additional</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Bob Braids</td>
+                <td>R300</td>
+            </tr>
+            <tr>
+                <td>Straight Back Braids</td>
+                <td>R300</td>
+            </tr>
+            <tr>
+                <td>Chiskop</td>
+                <td>R50</td>
+            </tr>
+            <tr>
+                <td>Any Cut</td>
+                <td>R60</td>
+            </tr>
+            <tr>
+                <td>Brush Cut</td>
+                <td>R50</td>
+            </tr>
+            <tr>
+                <td>Shaving</td>
+                <td>R40</td>
+            </tr>
+            <tr>
+                <td>Trim</td>
+                <td>R20</td>
+            </tr>
+            <tr>
+                <td>Tapper</td>
+                <td>R50</td>
+            </tr>
+        </tbody>
+    </table>
     
     <footer>
         &copy; Prime Queens Beauty Salon 2024
